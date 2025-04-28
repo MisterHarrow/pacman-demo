@@ -269,18 +269,23 @@ h3 {
 	left: 5px;
 }
 
-.putchu { 
+.putchu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
 	top: 450px;
 	left: 130px;
 	background-color: #4c6441;
-	padding: 10px 25px 40px 95px;
+	padding: 10px 25px 10px 25px;
 	text-transform: uppercase;
 }
-.putchu img { 
-	position: absolute; 
-	bottom: -5px;
-	left: 5px;
+.putchu img {
+	position: static;
+	height: 55px;
+	margin-right: 15px;
+	bottom: auto;
+	left: auto;
 }
 #panel .putchu { 
 	top: 0px;
