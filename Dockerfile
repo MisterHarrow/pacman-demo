@@ -1,4 +1,4 @@
-# Dockerfile builds the 'what' - i.e. puts the application in a box/container
+# Dockerfile builds i.e. puts the application in a box/container
 
 
 # Base Image: This FROM instruction tells Docker not to start from scratch, but to use an existing, pre-built image called nginx:alpine as the foundation. 
