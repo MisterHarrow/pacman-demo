@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  pacman-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-29T11:48:20.451584+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 26eaa4b23a75c05f34ef3bcf32e1f3784da787f6ee9b684a590bf34c58f99ff4
+    name: pacman-chart
+    type: application
+    urls:
+    - https://misterharrow.github.io/pacman-demo/pacman-chart-1.7.1.tgz
+    version: 1.7.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-29T11:48:20.4524+02:00"
+    description: A Helm chart for Kubernetes
+    digest: e5220c244beb18cc6dd8886626359c53fe4ae2a04fc688b976d085ac84690f21
+    name: pacman-chart
+    type: application
+    urls:
+    - https://misterharrow.github.io/pacman-demo/docs/pacman-chart-1.7.1.tgz
+    version: 1.7.1
+generated: "2025-04-29T11:48:20.451169+02:00"
