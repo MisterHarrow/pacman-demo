@@ -9,6 +9,6 @@ entries:
     name: pacman-chart
     type: application
     urls:
-    - https://misterharrow.github.io/pacman-demo/pacman-chart-1.7.2.tgz
-    version: 1.7.2
+    - https://misterharrow.github.io/pacman-demo/pacman-chart-1.7.3.tgz
+    version: 1.7.3
 generated: "2025-04-29T11:44:32.221889+02:00"
