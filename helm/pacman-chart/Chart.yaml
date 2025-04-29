@@ -1,3 +1,5 @@
+# This is the 'what' of the helm chart. It defines the application we want to deploy.
+# Argo CD looks at this to know what to deploy and puts it as a label on the box that gets sent to kubernetes
 apiVersion: v2
 name: pacman-chart
 description: A Helm chart for Kubernetes
