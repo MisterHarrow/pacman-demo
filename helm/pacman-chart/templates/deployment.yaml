@@ -1,3 +1,8 @@
+# Blueprints for Kubernetes objects. If the values.yaml is like the ingredient list for a recipe 
+# The deployment.yaml are the instructions for kubernetes for how to put these ingedients together.
+# They define things like how many copies of our application should run and use the image tag from values.yaml 
+# to tell Kubernetes exactly which container image to pull from the registry (for example GHCR)."
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

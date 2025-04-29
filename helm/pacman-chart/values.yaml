@@ -1,6 +1,8 @@
 # Default values for pacman-chart.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+
+# This is where we specify which version (or tag) of our Docker image we want Kubernetes to deploy.
+# It defines the what of how kubernetes will run our application - similar to the ingredient list in a recipe in a cookbook.
+# If you have a CI pipeline automatically updates this file with the new image tag after building it.
 
 # This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 1
