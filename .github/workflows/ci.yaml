@@ -40,13 +40,14 @@ jobs:
         id: vars
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
+      # Note: Convert repository owner to lowercase to meet Docker naming standards
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: . # Build context is the repo root
           file: ./Dockerfile # Path to your Dockerfile
           push: true # Push the image after building
-          tags: ghcr.io/${{ github.repository_owner }}/pacman:${{ steps.vars.outputs.sha_short }} # Tag with ghcr.io/owner/pacman:short_sha
+          tags: ghcr.io/${{ github.repository_owner.toLowerCase() }}/pacman:${{ steps.vars.outputs.sha_short }} # Tag with ghcr.io/owner_lowercase/pacman:short_sha
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -88,7 +89,7 @@ jobs:
           # Navigate into the gh-pages directory
           cd ./gh-pages
 
-          # Update the index.yaml file
+          # Update the index.yaml file using dynamic variables
           helm repo index . --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/ --merge index.yaml
 
       # --- Step 10: Commit and Push to gh-pages ---
